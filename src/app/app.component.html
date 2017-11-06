@@ -2,4 +2,9 @@
 <div [style.color]='customColor'>
   Hello {{name}}
 </div>
+<input type="text" [value]='name' (keyup)='name = $event.target.value'> Update on keyup<br>
+<input type="text" [value]='name' (keyup.enter)='name = $event.target.value'> Update on Enter<br>
+<input type="text" [value]='name' (blur)='name = $event.target.value'> Update on blur<br>
+<input type="text" [(ngModel)]='name'> <br>
+
 <button (click)='changeColor()'>Change color</button> 
