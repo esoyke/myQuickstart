@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor='let c of customers'>  <!-- don't use 'in' anymore for ng2 repeaters -->
+        <app-customer [customer]="c"></app-customer>
+    </li>
+</ul>
+<!-- <li *ngFor='#customer of customers'>  Deprecated syntax! Use 'let name' instead of '#name' -->

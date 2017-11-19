@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
+    "module": "system", // changed from commonJS to get __moduleName resolved
     "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
