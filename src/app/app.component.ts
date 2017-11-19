@@ -11,7 +11,7 @@ import {CustomerService} from './customer/customer.service';
 })
 
 export class AppComponent  { 
-  constructor (private _customerService: CustomerService;){}
+  constructor (private _customerService: CustomerService){}
   // [] means property binding - C to D
   // () means event binding - D to C
   name = 'Angular'; 
